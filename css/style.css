@@ -1,0 +1,199 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+body{
+    background-color: lightgray;
+}
+.main-header{
+    border:solid black;
+    background-color: white;
+}
+.container{
+    margin-bottom:25px;
+}
+
+.containprofile{
+    background-color: darkgray;
+}
+
+.containportfolio{
+    display:block;
+    border:solid black;
+    background-color: white;
+}
+
+li a{/* Remove underline on list links in nav */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight:bold;
+    color:white;
+    padding:10px;
+}
+
+p,h3,h2{
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+.profile_sec{
+    display:block;
+    border:solid blue;
+    padding-top: 25px;
+    overflow:hidden;
+}
+
+p{
+    font-size: 20px;
+}
+.name{
+    padding:1%;
+}
+.clearfix:after { 
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+}
+/* ================================= 
+  Media Queries
+==================================== */
+@media (min-width: 319px) {/* Phone */
+    .main-header{
+        text-align: center;
+    }
+    .name{
+        display:block;
+    }  
+    nav{
+        display:block;
+        
+        text-align: center;
+    }
+    li{
+        display:block;
+        margin:5px;
+        background-color: black;
+    }
+
+    .profile{/* IMAGE PROFILE*/
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .profile_sec p{/* TEXT for PROFILE */
+        text-align: center;
+        width:auto;
+    }
+
+    .projects{/*Project Grid Layout 1 vertical column*/
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        width:100%; 
+    }
+    .projectimg{
+        width:100%;
+    }
+}
+
+@media (min-width: 769px) {/* Tablet */
+    .main-header{
+        text-align: center;
+    }
+    .name{
+        display:block;
+    }
+    nav{
+        display:inline-block;
+        background-color: darkgray;
+    }
+    li{
+        display:inline;
+    }
+
+    .profile{/* IMAGE PROFILE*/
+        float:right;
+        margin-right:5%;
+    }
+    .profile_sec p{/* TEXT for PROFILE */
+        text-align: left;
+        width:55%;
+    }
+
+    .projects{/*Project Grid Layout 2 Vertical Columns*/
+        display:inline-block;
+        width:47%;
+        margin:1%; 
+    }
+    .projectimg{
+        width:100%;
+    }
+
+    .containfooter h2{
+        float:left;
+        padding:1%;
+        margin:0.67em;
+    }
+    .containfooter nav{
+        float:right;
+        padding:1%;
+        margin:0.67em;
+        background-color: lightgray;
+    }
+}
+
+@media (min-width: 1025px) {/* PC */
+    .name{
+        float:left;
+        padding:1%;
+        margin:0.67em;
+    }
+    nav{
+        float:right;
+        padding:1%;
+        margin:0.67em;
+        background-color: lightgray;
+    }
+    li{
+        display:inline;
+    }
+
+    .profile{/* IMAGE PROFILE*/
+        float:right;
+        margin-right:5%;
+    }
+    .profile_sec p{/* TEXT for PROFILE */
+        text-align: left;
+        width:55%;
+    }
+
+    .projects{/*Project Grid Layout 3x2*/
+        display:inline-block;
+        width:31%; 
+        margin:1%;
+    }
+    .projectimg{
+        width:100%;
+    }
+
+    .containfooter h2{
+        float:left;
+        padding:1%;
+        margin:0.67em;
+    }
+    .containfooter nav{
+        float:right;
+        padding:1%;
+        margin:0.67em;
+        background-color: lightgray;
+    }
+}
+
+
+
