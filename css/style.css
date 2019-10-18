@@ -3,6 +3,7 @@
 ==================================== */
 body{
     background-color: lightgray;
+    font-family: "Varela+Round";
 }
 .main-header{
     border:solid black;
@@ -60,55 +61,69 @@ p{
     height: 0; 
     clear: both;
 }
+
+/* ================================= 
+  Root Design (Mobile 1st approach)
+==================================== */
+.main-header{
+    text-align: center;
+}
+.name{
+    display:inline-block;
+    text-align: left;
+}  
+
+a#top{/*BACK TO TOP "href="#top"*/
+    float:right;
+    margin-top:25px;
+}
+
+footer a{
+    text-decoration: none;
+}
+.containfooter nav{
+    display:none;
+}
+li{
+    display:block;
+    margin:5px;
+    background-color: black;
+}
+
+.profile{/* IMAGE PROFILE*/
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+.profile_sec p{/* TEXT for PROFILE */
+    text-align: center;
+    width:auto;
+}
+
+.projects{/*Project Grid Layout 1 vertical column*/
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%; 
+}
+.projectimg{
+    width:100%;
+}
 /* ================================= 
   Media Queries
 ==================================== */
-@media (min-width: 319px) {/* Phone */
-    .main-header{
-        text-align: center;
-    }
-    .name{
-        display:block;
-    }  
-    nav{
-        display:block;
-        
-        text-align: center;
-    }
-    li{
-        display:block;
-        margin:5px;
-        background-color: black;
-    }
-
-    .profile{/* IMAGE PROFILE*/
-        display:block;
-        margin-left:auto;
-        margin-right:auto;
-    }
-    .profile_sec p{/* TEXT for PROFILE */
-        text-align: center;
-        width:auto;
-    }
-
-    .projects{/*Project Grid Layout 1 vertical column*/
-        display:block;
-        margin-left:auto;
-        margin-right:auto;
-        width:100%; 
-    }
-    .projectimg{
-        width:100%;
-    }
-}
-
-@media (min-width: 769px) {/* Tablet */
+@media (min-width: 768px) {/* Tablet */
     .main-header{
         text-align: center;
     }
     .name{
         display:block;
     }
+
+    a#top{/*BACK TO TOP "href="#top"*/
+        display: none;
+    }
+
     nav{
         display:inline-block;
         background-color: darkgray;
@@ -141,6 +156,7 @@ p{
         margin:0.67em;
     }
     .containfooter nav{
+        display:block;
         float:right;
         padding:1%;
         margin:0.67em;
@@ -148,12 +164,17 @@ p{
     }
 }
 
-@media (min-width: 1025px) {/* PC */
+@media (min-width: 1024px) {/* PC */
     .name{
         float:left;
         padding:1%;
         margin:0.67em;
     }
+
+    a#top{/*BACK TO TOP "href="#top"*/
+        display: none;
+    }
+
     nav{
         float:right;
         padding:1%;
@@ -188,6 +209,7 @@ p{
         margin:0.67em;
     }
     .containfooter nav{
+        display:block;
         float:right;
         padding:1%;
         margin:0.67em;
