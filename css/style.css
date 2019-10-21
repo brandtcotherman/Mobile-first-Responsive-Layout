@@ -3,7 +3,7 @@
 ==================================== */
 body{
     background-color: lightgray;
-    font-family: "Varela+Round";
+    font-family: "Varela Round", Arial, Helvetica, sans-serif;
 }
 .main-header{
     border:solid black;
@@ -69,13 +69,17 @@ p{
     text-align: center;
 }
 .name{
-    display:inline-block;
-    text-align: left;
+    display:block;
+    text-align: center;
 }  
 
+h2.name{
+    float:left;
+}
 a#top{/*BACK TO TOP "href="#top"*/
     float:right;
-    margin-top:25px;
+    margin-top:30px;
+    margin-right: 20px;
 }
 
 footer a{
@@ -92,12 +96,14 @@ li{
 
 .profile{/* IMAGE PROFILE*/
     display:block;
+    max-width: 200px;
     margin-left:auto;
     margin-right:auto;
 }
 .profile_sec p{/* TEXT for PROFILE */
     text-align: center;
     width:auto;
+    margin:2%;
 }
 
 .projects{/*Project Grid Layout 1 vertical column*/
@@ -133,12 +139,15 @@ li{
     }
 
     .profile{/* IMAGE PROFILE*/
-        float:right;
-        margin-right:5%;
+        float: right;
+        margin-right:2%;
+        max-width: 100%;
     }
     .profile_sec p{/* TEXT for PROFILE */
+
         text-align: left;
-        width:55%;
+        max-width: 45%;
+        margin:2%;
     }
 
     .projects{/*Project Grid Layout 2 Vertical Columns*/
@@ -188,10 +197,12 @@ li{
     .profile{/* IMAGE PROFILE*/
         float:right;
         margin-right:5%;
+        max-width: 100%;
     }
     .profile_sec p{/* TEXT for PROFILE */
         text-align: left;
         width:55%;
+        margin:2%;
     }
 
     .projects{/*Project Grid Layout 3x2*/
